@@ -18,6 +18,7 @@ Los instaladores están en [Releases](https://github.com/mantiel/escribeloya-rel
 
 | Versión | Estado | SHA-256 del instalador |
 |---|---|---|
+| 0.1.0-beta.2 | Beta | `32693C243D8F0D09BC3C1D4C439AC3960C68673BD271581758BC7501649481AB` |
 | 0.1.0-beta.1 | Beta | `C43940397F4098FB2652FD0A9FCA125AFC00869581CA87A0B5CB81CCDAF0B1B2` |
 
 ## Requisitos
@@ -34,7 +35,7 @@ Los instaladores están en [Releases](https://github.com/mantiel/escribeloya-rel
 Para comprobar que el archivo es el que se publicó, compara su suma de verificación con la de la tabla (PowerShell):
 
 ```powershell
-Get-FileHash .\EscribeloYa_0.1.0-beta.1_x64-setup.exe -Algorithm SHA256
+Get-FileHash .\EscribeloYa_0.1.0-beta.2_x64-setup.exe -Algorithm SHA256
 ```
 
 ## Tus datos
