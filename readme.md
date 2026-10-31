@@ -18,6 +18,7 @@ Los instaladores están en [Releases](https://github.com/mantiel/escribeloya-rel
 
 | Versión | Estado | SHA-256 del instalador |
 |---|---|---|
+| 0.1.0-beta.4 | Beta | `EFE7A5F3BBA7894557B6A93CE018F1D73BAB25AEE271E93A806E9139B174D84C` |
 | 0.1.0-beta.3 | Beta | `6DFA2548CBFDCED9A990D9EB8EFBD21EA818DC6639A8B572A7FFDEC8D660E628` |
 | 0.1.0-beta.2 | Beta | `32693C243D8F0D09BC3C1D4C439AC3960C68673BD271581758BC7501649481AB` |
 | 0.1.0-beta.1 | Beta | `C43940397F4098FB2652FD0A9FCA125AFC00869581CA87A0B5CB81CCDAF0B1B2` |
@@ -36,25 +37,27 @@ Los instaladores están en [Releases](https://github.com/mantiel/escribeloya-rel
 Para comprobar que el archivo es el que se publicó, compara su suma de verificación con la de la tabla (PowerShell):
 
 ```powershell
-Get-FileHash .\EscribeloYa_0.1.0-beta.3_x64-setup.exe -Algorithm SHA256
+Get-FileHash .\EscribeloYa_0.1.0-beta.4_x64-setup.exe -Algorithm SHA256
 ```
 
 ## Tus datos
 
 Los cuadernos se guardan en tu equipo, en `%APPDATA%\EscribeloYa\notebooks`. Desinstalar la aplicación **no** los borra.
-Para llevarlos a otro equipo, crea una copia de seguridad (`.zip`) desde la aplicación y restáurala allí. Nada sale de tu
-equipo: la aplicación no hace ninguna conexión.
+Para llevarlos a otro equipo, crea una copia de seguridad (`.zip`) desde la aplicación y restáurala allí. Tus cuadernos no
+salen de tu equipo. La única conexión de la aplicación es la comprobación de versiones, que está desactivada por defecto.
 
 ## Actualizar
 
-No hay actualización automática. Para pasar a una versión nueva, descarga su instalador y ejecútalo: se instala encima de la
-anterior y conserva tus cuadernos.
+La actualización automática es opcional y viene desactivada. Puedes activarla en **Ajustes → General → Actualizaciones**: la
+aplicación comprueba al abrirse si hay una versión nueva, la descarga y la instala al cerrarse. Si no la activas, descarga el
+instalador de la versión nueva y ejecútalo: se instala encima de la anterior y conserva tus cuadernos.
 
 ## Lo que aún no está probado
 
 - La impresión a tamaño real (100 %) no se ha medido con una regla. Se exporta a PDF y se imprime desde un lector, sin
   «ajustar a la página».
 - La presión del lápiz no se ha probado con un lápiz real.
+- La actualización automática todavía no se ha probado entre dos versiones publicadas. Se probará con la siguiente beta.
 - Solo Windows 10 y 11 de 64 bits; no hay versión para macOS ni Linux.
 
 ## Ayuda y contacto
